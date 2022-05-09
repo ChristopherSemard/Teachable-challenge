@@ -202,33 +202,15 @@ footer p:nth-child(2){
     }
     
     /* Placement des images */
-    #image_container figure:nth-child(1){
-        grid-area: a;
-    }
-    #image_container figure:nth-child(2){
-        grid-area: b;
-    }
-    #image_container figure:nth-child(3){
-        grid-area: c;
-    }
-    #image_container figure:nth-child(4){
-        grid-area: d;
-    }
-    #image_container figure:nth-child(5){
-        grid-area: e;
-    }
-    #image_container figure:nth-child(6){
-        grid-area: f;
-    }
-    #image_container figure:nth-child(7){
-        grid-area: g;
-    }
-    #image_container figure:nth-child(8){
-        grid-area: h;
-    }
-    #image_container figure:nth-child(9){
-        grid-area: i;
-    }
+    #image_container figure:nth-child(1){grid-area: a;}
+    #image_container figure:nth-child(2){grid-area: b;}
+    #image_container figure:nth-child(3){grid-area: c;}
+    #image_container figure:nth-child(4){grid-area: d;}
+    #image_container figure:nth-child(5){grid-area: e;}
+    #image_container figure:nth-child(6){grid-area: f;}
+    #image_container figure:nth-child(7){grid-area: g;}
+    #image_container figure:nth-child(8){grid-area: h;}
+    #image_container figure:nth-child(9){grid-area: i;}
 
     /* Masquer les images pas visibles en desktop */
     .tablet{
