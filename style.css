@@ -70,6 +70,7 @@ ul{
 nav li{
     padding: 5px;
     font-size: 0.8em;
+    cursor: pointer;
 }
 nav li:active{
     font-weight: 600;
@@ -113,8 +114,8 @@ footer p:nth-child(2){
 }
 
 
-
-@media screen and (max-width: 768px) {
+/* Tablet */
+@media screen and (min-width: 768px) {
 
     /* Header */
     header{
@@ -147,13 +148,77 @@ footer p:nth-child(2){
 
     /* Div images et grid */
     #image_container{
-        display: grid;
         grid-template-columns: repeat(5, 100px) ;
         grid-template-rows: repeat(3, 100px) ;
-        justify-content: space-between;
-        gap: 15px;
     }
     .tablet{
         display: block;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+    /* Main */
+    main{
+        max-width: 1200px;
+        margin: auto;
+    }
+    main h1, main p{
+        width: 60%;
+    }
+
+    /* Nav */
+    nav{
+        margin: 40px 0;
+    }
+    
+    /* Div images et grid */
+    #image_container{
+        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-rows: repeat(3, 350px) ;
+        grid-template-areas:    'a a b c'
+                                'd e f f'
+                                'g g h i';
+        justify-content: space-between;
+    }
+    
+    /* Placement des images */
+    #image_container figure:nth-child(1){
+        grid-area: a;
+    }
+    #image_container figure:nth-child(2){
+        grid-area: b;
+    }
+    #image_container figure:nth-child(3){
+        grid-area: c;
+    }
+    #image_container figure:nth-child(4){
+        grid-area: d;
+    }
+    #image_container figure:nth-child(5){
+        grid-area: e;
+    }
+    #image_container figure:nth-child(6){
+        grid-area: f;
+    }
+    #image_container figure:nth-child(7){
+        grid-area: g;
+    }
+    #image_container figure:nth-child(8){
+        grid-area: h;
+    }
+    #image_container figure:nth-child(9){
+        grid-area: i;
+    }
+
+    /* Masquer les images pas visibles en desktop */
+    .tablet{
+        display: none;
+    }
+
+    /* Footer */
+    footer{
+        padding: 50px 0;
     }
 }
