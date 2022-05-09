@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Yeseva+One&display=swap');
 
 /* Couleurs utilisées */
-:root, body[data-theme="dark"]{
+:root, html[data-theme="dark"]{
     --primary : #1BD79E;
     --background : #041821;
     --text : #ffffff;
@@ -9,7 +9,7 @@
     --nav-active-text : #ffffff;
     --nav-active-background : rgba(27, 215, 158, 1)
 }
-:root, body[data-theme="light"]{
+:root, html[data-theme="light"]{
     --primary : #1BD79E;
     --background : #ffffff;
     --text : #000000;
@@ -45,7 +45,7 @@ header, h1{
 /* Header */
 header{
     text-align: center;
-    border-bottom: 2px solid rgba(255,255,255, 0.15);
+    border-bottom: 1px solid var(--text-secondary);
     padding: 30px 0;
 }
 header p{
@@ -55,6 +55,7 @@ header p{
 }
 .socials i{
     margin: 0 5px;
+    cursor: pointer;
 }
 span{
     color: var(--primary) ;
