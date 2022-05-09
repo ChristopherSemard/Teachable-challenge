@@ -71,24 +71,27 @@ main p{
 }
 
 /* Navigation */
-ul{
+nav{
     display: flex;
     margin: 20px 0;
     list-style-type: none;
     justify-content: space-between;
 }
-nav li{
-    padding: 5px;
+nav button{
+    background: none;
+    border: none;
+    padding: 0.3em;
     font-size: 0.8em;
     cursor: pointer;
     color: var(--text);
     letter-spacing: 2px;
     
 }
-nav li:active{
+nav button:active, nav button:hover, nav .active{
     font-weight: 600;
     color: var(--nav-active-text);
     background-color: var(--nav-active-background);
+    outline: none;
 }
 
 /* Div images en grid */
@@ -156,7 +159,7 @@ footer p:nth-child(2){
     }
 
     /* Nav */
-    ul{
+    nav{
         justify-content: center;
         gap: 30px;
     }
