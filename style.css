@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Yeseva+One&display=swap');
 
+/* Couleurs utilisées */
 :root{
     --primary : #1BD79E;
     --background : #041821;
@@ -7,57 +8,59 @@
     --text-secondary : #808080;
 }
 
+/* Réinitialisation des marges et padding */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* Background et couleurs et fonts de base des textes */
 body{
     background-color: var(--background);
     color: var(--text);
     font-family: 'Montserrat', sans-serif;
 }
 
-
+/* Padding global du main */
 main{
     padding: 0 20px;
 }
 
+/* Définition police particulière */
 header, h1{
     font-family: 'Yeseva One', cursive;
 }
 
+
+/* Header */
 header{
     text-align: center;
     border-bottom: 2px solid rgba(255,255,255, 0.15);
     padding: 30px 0;
 }
-
 header p{
     font-size: 1.5em;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
 .socials i{
     margin: 0 5px;
 }
-
 span{
     color: var(--primary) ;
 }
 
 
+/* Main */
 main h1{
     font-size: 2em;
     font-weight: lighter;
 }
-
 main p{
     color : var(--text-secondary);
 }
 
-
+/* Navigation */
 nav{
     display: flex;
     margin: 20px 0;
@@ -68,19 +71,18 @@ nav li{
     padding: 5px;
     font-size: 0.8em;
 }
-
 nav li:active{
     font-weight: 600;
     background-color: var(--primary);
 }
 
+/* Div images en grid */
 #image_container{
     display: grid;
     grid-template-columns: repeat(3, 100px) ;
     grid-template-rows: repeat(3, 100px) ;
     gap: 20px;
 }
-
 img{
     width: 100%;
     height: 100%;
@@ -88,18 +90,16 @@ img{
     border-radius: 3px;
 }
 
-
+/* Footer */
 footer{
     padding: 40px 0;
     text-align: center;
 }
-
 footer p:nth-child(1){
     font-size: 0.75em;
     font-weight: 400;
     margin: 10px;
 }
-
 footer p:nth-child(2){
     font-size: 0.65em;
     font-weight: 300;
